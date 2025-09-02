@@ -4,30 +4,18 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-	char caractere;
-	printf("entre un caractere");
-	scanf("%c",&caractere);
-	switch(caractere){
-		case 'a':
-			printf("le caractére saisi est un voyelle");
-			break;
-		case 'e':
-			printf("le caractére saisi est un voyelle");
-			break;
-		case 'i':
-			printf("le caractére saisi est un voyelle");
-			break;
-		case 'o':
-			printf("le caractére saisi est un voyelle");
-			break;
-		case 'u':
-			printf("le caractére saisi est un voyelle");
-			break;
-		case 'y':
-			printf("le caractére saisi est un voyelle");
-			break;
-		default:
-            printf("%c n'est pas une voyelle.\n", caractere);
+	int nbr1,nbr2,somme = 0;
+	printf("entre premier nombre : ");
+	scanf("%d",&nbr1);
+	printf("entre premier nombre :");
+	scanf("%d",&nbr2);
+	if(nbr1 == nbr2){
+		somme = (nbr1 + nbr2)*3;
+		printf("le triple de la somme est :%d",somme);
+	}
+	else{
+		somme = nbr1 + nbr2;
+	    printf("la somme est :%d",somme);
 	}
 	return 0;
 }
